@@ -66,3 +66,28 @@ function remove_footer_admin()
 {
     echo 'Minha Empresa';
 }
+
+
+// PADROES DE TAMANHOS DE IMAGENS
+if (function_exists('add_theme_support')) {
+// Add Thumbnail Theme Support
+    add_theme_support('post-thumbnails');
+    add_image_size('large', 700, '', true);
+    add_image_size('medium', 250, '', true);
+    add_image_size('small', 120, '', true);
+    add_image_size('news', 185, 185, true);
+    add_image_size('post', 616, 160, true);
+    add_image_size('slider', 970, 360, true);
+    add_image_size('fotos', 300, 200, true);
+}
+
+
+// Register Navigation
+function register_html5_menu()
+{
+    register_nav_menus(array(
+        'principal' => __('Principal'),
+        'footer' => __('Footer'),
+        'sidebar' => __('Sidebar')
+    ));
+}
