@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# chmod +x clean-wordpress.sh
+# ./clean-wordpress.sh
+
 # CRIANDO UMA INSTALACAO LIMPA DO WORDPRESS
 WORDPRESS_URL="https://wordpress.org/latest.tar.gz"
  
