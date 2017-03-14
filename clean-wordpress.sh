@@ -81,5 +81,8 @@ rm -rf akismet
 cd ../themes
 echo "Removendo temas padrão"
 rm -R -- */
+
+echo "Adicionando um temas limpo by underscores.me"
+curl --data "underscoresme_generate=1&underscoresme_name=$PROJECT_FOLDER_NAME&underscoresme_slug=$PROJECT_FOLDER_NAME&underscoresme_author=$PROJECT_FOLDER_NAME&underscoresme_author_uri=http%3A%2F%2Fdropall.gitbuh.io&underscoresme_description=$PROJECT_FOLDER_NAME." http://underscores.me >> $PROJECT_FOLDER_NAME.zip; unzip $PROJECT_FOLDER_NAME.zip; rm $PROJECT_FOLDER_NAME.zip;
  
 echo "All done..."
