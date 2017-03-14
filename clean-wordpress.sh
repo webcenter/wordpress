@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # CRIANDO UMA INSTALACAO LIMPA DO WORDPRESS
 WORDPRESS_URL="https://wordpress.org/latest.tar.gz"
  
