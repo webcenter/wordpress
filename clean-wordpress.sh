@@ -7,7 +7,7 @@ WORDPRESS_URL="https://wordpress.org/latest.tar.gz"
 echo "Nome do Projeto?"
 read PROJECT_FOLDER_NAME
  
-echo "Pasta localhost (ex: /var/www/html/)?"
+echo "Pasta localhost (ex: /var/www/html)?"
 read PROJECT_SOURCE_URL
  
 echo "Criar wp_config? (y/n)"
