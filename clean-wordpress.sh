@@ -9,22 +9,7 @@ read PROJECT_FOLDER_NAME
  
 echo "Pasta localhost (ex: /var/www/html)?"
 read PROJECT_SOURCE_URL
- 
-echo "Criar wp_config? (y/n)"
-read SHOULD_SETUP_DB
- 
-if [ $SHOULD_SETUP_DB = 'y' ]
-then
-    echo "DB Name"
-    read DB_NAME
- 
-    echo "DB Username"
-    read DB_USERNAME
- 
-    echo "DB Password"
-    read DB_PASSWORD
-fi
- 
+
 #LETS START INSTALLING
 echo "Sente e relaxe :) ......"
  
@@ -46,9 +31,21 @@ mv wordpress public_html
 cd public_html
 rm license.txt
 rm readme.html
- 
+
+echo "Criar wp_config? (y/n)"
+read SHOULD_SETUP_DB
+
 if [ $SHOULD_SETUP_DB = 'y' ]
 then
+    echo "DB Name"
+    read DB_NAME
+
+    echo "DB Username"
+    read DB_USERNAME
+
+    echo "DB Password"
+    read DB_PASSWORD
+
     # SETUP WP CONFIG
     echo "Create wp_config"
     mv wp-config-sample.php wp-config.php
