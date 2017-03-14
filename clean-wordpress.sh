@@ -58,6 +58,7 @@ then
     rm -f wp-config.php.bak
 fi
 
+# DISALLOW FILE EDIT THEME/PLUGINS
 sed -i "s/\/\* That's all, stop editing! Happy blogging. \*\//define('DISALLOW_FILE_EDIT',true);/g" wp-config.php 
 
 # PERMISSIONS DIRECTORIES
