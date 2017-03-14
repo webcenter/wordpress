@@ -83,11 +83,8 @@ if (function_exists('add_theme_support')) {
 
 
 // Register Navigation
-function register_html5_menu()
-{
-    register_nav_menus(array(
-        'principal' => __('Principal'),
-        'footer' => __('Footer'),
-        'sidebar' => __('Sidebar')
-    ));
-}
+register_nav_menus(array(
+    'principal' => __('Principal'),
+    'footer' => __('Footer'),
+    'sidebar' => __('Sidebar')
+));
