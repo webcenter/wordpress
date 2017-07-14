@@ -5,7 +5,7 @@
 # Telegram Sharing WordPress
 # https://telegram.me/joinchat/AxEOfT2taCam-uC8WPbLxQ
 
-# CRIANDO UMA INSTALACAO LIMPA DO WORDPRESS
+# DOWN WORDPRESS
 WORDPRESS_URL="https://wordpress.org/latest.tar.gz"
  
 # GET ALL USER INPUT
