@@ -69,8 +69,9 @@ echo "Set permissions folder/files"
 find . -type d -exec chmod 755 {} \;
 find . -type f -exec chmod 644 {} \;
 chmod -R 775 wp-content
-chmod -v 604 .htaccess
-chmod 600 index.php
+chmod -v 666 .htaccess
+chmod 660 index.php
+chmod 660 wp-config.php
 
  
 # REMOVE DEFAULT PLUGINS AND INSTALL WORDPRESS_PLUGIN_URL
