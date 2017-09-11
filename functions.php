@@ -89,10 +89,11 @@ register_nav_menus(array(
     'sidebar' => __('Sidebar')
 ));
 
-Remove Query Strings – Optional Step
-# Another thing we recommend is to remove query strings from your static resources.
-# Resources with a “?” in the URL are not cached by some proxy caching servers or CDNS,
-# which could result in a large missed opportunity for increased speeds. One way to do this would be to add the following to your functions.php file.
+// Remove Query Strings – Optional Step
+// Another thing we recommend is to remove query strings from your static resources.
+// Resources with a “?” in the URL are not cached by some proxy caching servers or CDNS,
+// which could result in a large missed opportunity for increased speeds. 
+// One way to do this would be to add the following to your functions.php file.
 
 function _remove_script_version( $src ){
 $parts = explode( '?ver', $src );
