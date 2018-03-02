@@ -45,19 +45,15 @@ echo '#wp-admin-bar-wp-logo .ab-icon {background: url('.get_bloginfo('template_d
 // Customizar o Footer do WordPress
 function remove_footer_admin () {
 	echo '© <a href="mailto:hmjsite@gmail.com">Henry Jr</a> - Desenvolvimento inteligente';
-}
+	}
 add_filter('admin_footer_text', 'remove_footer_admin');
 
 ## Links - Referencias
 
-Customizing the Login Form
-http://codex.wordpress.org/Customizing_the_Login_Form
+Customizing the Login Form http://codex.wordpress.org/Customizing_the_Login_Form
 
-Creating Admin Themes
-http://codex.wordpress.org/Creating_Admin_Themes
+Creating Admin Themes http://codex.wordpress.org/Creating_Admin_Themes
 
-WordPress Code Snippets
-http://wp-snippets.com/
+WordPress Code Snippets http://wp-snippets.com/
 
-How To Customize The WordPress Admin Easily
-http://www.smashingmagazine.com/2012/05/17/customize-wordpress-admin-easily/
+How To Customize The WordPress Admin Easily http://www.smashingmagazine.com/2012/05/17/customize-wordpress-admin-easily/
