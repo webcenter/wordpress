@@ -68,11 +68,13 @@ FROM wp_comments;
 
 ## Apagar todos pingbacks
 ```DELETE FROM wp_comments 
-WHERE comment_type = 'pingback';```
+WHERE comment_type = 'pingback';
+```
 
 ## Apagar todos comentários de SPAM
 ```DELETE FROM wp_comments 
-WHERE comment_approved = 'spam';```
+WHERE comment_approved = 'spam';
+```
 
 ## Identificar tags não usadas
 ```SELECT * From wp_terms wt
