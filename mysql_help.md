@@ -57,27 +57,32 @@ WHERE a.post_type = 'revision';
 ```
 
 ## Apagar post meta
-```DELETE FROM wp_postmeta
+```
+DELETE FROM wp_postmeta
 WHERE meta_key = 'nome-chave-meta';
 ```
 
 ## Exportar todos os e-mails de comentários
-```SELECT DISTINCT comment_author_email
+```
+SELECT DISTINCT comment_author_email
 FROM wp_comments;
 ```
 
 ## Apagar todos pingbacks
-```DELETE FROM wp_comments 
+```
+DELETE FROM wp_comments 
 WHERE comment_type = 'pingback';
 ```
 
 ## Apagar todos comentários de SPAM
-```DELETE FROM wp_comments 
+```
+DELETE FROM wp_comments 
 WHERE comment_approved = 'spam';
 ```
 
 ## Identificar tags não usadas
-```SELECT * From wp_terms wt
+```
+SELECT * From wp_terms wt
 INNER JOIN wp_term_taxonomy wtt
 ON wt.term_id=wtt.term_id
 WHERE wtt.taxonomy='post_tag'
