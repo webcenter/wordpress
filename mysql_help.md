@@ -81,4 +81,7 @@ WHERE comment_approved = 'spam';
 INNER JOIN wp_term_taxonomy wtt
 ON wt.term_id=wtt.term_id
 WHERE wtt.taxonomy='post_tag'
-AND wtt.count=0;```
+AND wtt.count=0;
+```
+
+**Fonte:** http://desenvolvimentoparaweb.com/wordpress/15-comandos-sql-wordpress/
