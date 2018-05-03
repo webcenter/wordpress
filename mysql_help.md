@@ -22,7 +22,8 @@ SET post_content = REPLACE (post_content, 'src="http://www.enderecoantigo.com', 
 ```
 
 ```UPDATE wp_posts
-SET guid = REPLACE (guid, 'http://www.enderecoantigo.com', 'http://www.endereconovo.com') WHERE post_type = 'attachment';
+SET guid = REPLACE (guid, 'http://www.enderecoantigo.com', 'http://www.endereconovo.com') 
+WHERE post_type = 'attachment';
 ```
 
 ## Atualizar Post Meta
@@ -66,10 +67,12 @@ FROM wp_comments;
 ```
 
 ## Apagar todos pingbacks
-```DELETE FROM wp_comments WHERE comment_type = 'pingback';```
+```DELETE FROM wp_comments 
+WHERE comment_type = 'pingback';```
 
 ## Apagar todos comentários de SPAM
-```DELETE FROM wp_comments WHERE comment_approved = 'spam';```
+```DELETE FROM wp_comments 
+WHERE comment_approved = 'spam';```
 
 ## Identificar tags não usadas
 ```SELECT * From wp_terms wt
