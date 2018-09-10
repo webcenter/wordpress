@@ -2,8 +2,8 @@
 
 # chmod +x clean-wordpress.sh
 # ./clean-wordpress.sh
-# Telegram Sharing WordPress
-# https://telegram.me/joinchat/AxEOfT2taCam-uC8WPbLxQ
+# Telegram - WordPress Brasil
+# https://t.me/WordPressBrasil
 
 # DOWN WORDPRESS
 WORDPRESS_URL="https://wordpress.org/latest.tar.gz"
