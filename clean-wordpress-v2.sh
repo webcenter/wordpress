@@ -74,7 +74,7 @@ echo "Set permissions folder/files"
 #
 WP_OWNER=www-data # <-- wordpress owner
 WP_GROUP=www-data # <-- wordpress group
-WP_ROOT=$1 # <-- wordpress root directory
+WP_ROOT= $SHOULD_SETUP_DB # <-- wordpress root directory
 WS_GROUP=www-data # <-- webserver group
 
 # reset to safe defaults
@@ -93,8 +93,6 @@ find ${WP_ROOT}/wp-content -type f -exec chmod 664 {} \;
 
 chmod -R 775 wp-content
 chmod -v 666 .htaccess
-chmod 666 index.php
-chmod 666 wp-config.php
  
 # REMOVE DEFAULT PLUGINS AND INSTALL WORDPRESS_PLUGIN_URL
 cd wp-content/plugins
