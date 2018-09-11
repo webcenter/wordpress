@@ -36,6 +36,9 @@ mv wordpress public_html
 cd public_html
 rm license.txt
 rm readme.html
+mv * ../
+cd ../
+rm -rf public_html
 
 echo "Criar wp_config? (y/n)"
 read SHOULD_SETUP_DB
